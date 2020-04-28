@@ -1,0 +1,41 @@
+\documentclass[a4paper,12pt]{article}
+
+\begin{document}
+
+\title{My First Document}
+\author{My Name}
+\date{\today}
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+This is the Introduction
+$$1+2=3$$
+
+\begin{equation}
+    1+2=3
+\end{equation}
+
+\section{Methods}
+
+\subsection{Stage 1}
+\label{sec1}
+
+This first part of the methods.
+
+\subsection{Stage 2}
+The second part of the methods.
+\cite{Birdetal2001}
+
+\section{Results}
+Here are my Results.Refering to section \ref{sec1}on page \pageref{sec1}
+
+\bibliographystyle{plain}
+\bibliography{x}
+
+
+\end{document}
